@@ -1,0 +1,4 @@
+Sinatra web application running on a Heroku server
+
+A+ Betting web application that allows a user to create
+an account to access a betting application.

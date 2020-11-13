@@ -1,0 +1,45 @@
+<html>
+
+<body>
+
+	<div class="bet">
+		<div class="message">
+			<% if session[:message] %>
+				<h3><%= session[:message] %></h3>
+				<% session[:message] = nil %>
+			<% end %>
+		</div>
+		<div class="session">
+			<div class="bets">
+				<h3>Bet:</h3>
+				<form action="/bet" method='post'>
+					Bet money: <input type='number' name='bet'></input><br>
+					Input guess (1-6): <input type='number' name='guess'></input><br><br>
+					<input type='submit' name='bet-submit' value='Bet'></input>
+				</form>
+			</div>
+
+			<div class="results">
+				<h3>Session Results:</h3>
+				<ul>
+					<li>Total win: <%= session[:win] %></li>
+					<li>Total loss: <%= session[:loss] %></li>
+					<li>Total profit: <%= session[:profit] %></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="account">
+			<h3> <%= @user.username %>'s Account: </h3>	
+			<ul id="account">
+				<li>Total win: <%= @user.win %></li>
+				<li>Total loss: <%= @user.loss %></li>
+				<li>Total profit: <%= @user.profit %></li>
+			</ul>
+			<br>
+		</div>
+
+		<a href="/logout"> log out</a>
+	</div>
+</body>
+</html>

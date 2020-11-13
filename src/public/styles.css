@@ -1,0 +1,102 @@
+html {
+	height: 100%;
+	font-family: Arial;
+}
+
+body {
+	background-color: #eeeeee;
+}
+
+a:link {
+	color: #004C09;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #004C09;
+}
+
+a:hover {
+	color: #00810F;
+}
+
+.header {
+	text-align: center;
+	background-color: #d2d2d2; 
+	padding: 5px 5px;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #d2d2d2;
+	color: black;
+	font-size: 11px;
+	text-align: center;
+}
+
+.home {
+	text-align: center;
+}
+
+.login {
+	text-align: center;
+}
+
+.create {
+	text-align: center;
+}
+
+.message {
+	text-align: center;
+	font-size: 24px;
+}
+
+.bet {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.session {
+	display: flex;
+	flex-direction: row;
+}
+
+.bets {
+	width:50%;
+	text-align: left;
+}
+
+.account {
+	text-align: center;
+}
+
+#account {
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.account li {
+	display: inline-block;
+	padding: 0px 10px 5px 5px;
+}
+
+
+.results ul {
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.results li {
+	padding-top: 5px;
+}
+
+

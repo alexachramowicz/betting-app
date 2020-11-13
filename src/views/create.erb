@@ -1,0 +1,20 @@
+<html>
+<body>
+	<div class="message">
+		<% if session[:message] %>
+			<h3><%= session[:message] %></h3>
+			<% session[:message] = nil %>
+		<% end %>
+	</div>
+
+	<div class="create">
+		<h1>Create Account</h1>
+		<form action="/create" method='post'>
+			Username: <input type='text' name='username'/></input><br><br>
+			Password: <input type='password' name='password'/></input><br><br>
+			<input type='submit' name='submit' value='Create'></input>
+		</form>
+	</div>
+
+</body>
+</html>
